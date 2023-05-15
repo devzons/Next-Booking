@@ -38,6 +38,7 @@
 ### Prisma
 
 - connecting to postgres database
+- Supabase service was not stable with free version, so tested them PostgreSQL with Pgadmin locally.
 
 ```bash
 npm install prisma
