@@ -56,3 +56,31 @@ npx prisma db push
 
 - Seed data to the database
   `pages/api/hello.ts
+
+### Render Title
+
+```javascript
+const renderTitle = () => {
+  const nameArray = name.split('-')
+  // get last portion of name
+  nameArray[nameArray.length - 1] = `(${nameArray[nameArray.length - 1]})`
+  return nameArray.join(' ')
+}
+```
+
+### Sidebar Search function
+
+```javascript
+<Link
+  href={{
+    pathname: '/search',
+    query: {
+      city: location.name,
+    },
+  }}
+  key={location.id}
+  className='font-light text-reg capitalize'
+>
+  {location.name}
+</Link>
+```
