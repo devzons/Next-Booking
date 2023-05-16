@@ -84,3 +84,9 @@ const renderTitle = () => {
   {location.name}
 </Link>
 ```
+
+### filtering
+
+`/search?city=ottawa&cuisine=indian&price=REGULAR`
+
+### Search by restaurant name?
