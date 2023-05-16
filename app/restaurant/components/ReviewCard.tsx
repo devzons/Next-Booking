@@ -1,3 +1,4 @@
+import Stars from '@/app/components/Stars'
 import { Review } from '@prisma/client'
 
 export default function ReviewCard({ review }: { review: Review }) {
@@ -17,7 +18,9 @@ export default function ReviewCard({ review }: { review: Review }) {
         </div>
         <div className='ml-0 md:ml-10 w-full md:w-5/6'>
           <div className='flex items-center'>
-            <div className='flex mx-auto md:mr-5'>*****</div>
+            <div className='flex mx-auto md:mr-5'>
+              <Stars rating={review.rating} reviews={[]} />
+            </div>
           </div>
           <div className='mt-5'>
             <p className='text-lg font-light'>{review.text}</p>

@@ -89,4 +89,4 @@ const renderTitle = () => {
 
 `/search?city=ottawa&cuisine=indian&price=REGULAR`
 
-### Search by restaurant name?
+### Search by restaurant name
