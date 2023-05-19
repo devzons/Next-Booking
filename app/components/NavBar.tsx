@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import LoginModal from './LoginModal'
 
 export default function NavBar() {
   return (
@@ -13,11 +14,9 @@ export default function NavBar() {
           Open<span className='font-bold'>Booking</span>
         </span>
       </Link>
-      <div className='flex md:pr-1.5 pr-0 mx-auto md:mx-0 mt-2 md:mt-0'>
-        <button className='bg-orange-600 text-white border p-1 px-4 rounded mr-3'>
-          Sign in
-        </button>
-        <button className='border p-1 px-4 rounded'>Sign up</button>
+      <div className='flex mx-auto md:mx-0 mt-2 md:mt-0'>
+        <LoginModal isSignin={true} />
+        <LoginModal isSignin={false} />
       </div>
     </nav>
   )

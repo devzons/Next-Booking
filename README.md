@@ -96,3 +96,7 @@ const renderTitle = () => {
 ### Handling Loading and Errors States
 
 - create `loading.tsx` file in app dir
+
+## Authentication
+
+### Modal - material UI
