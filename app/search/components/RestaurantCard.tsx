@@ -38,7 +38,7 @@ export default function RestaurantCard({
         className='w-full h-44 md:w-44 md:h-36 rounded'
       />
       <div className='pl-5'>
-        <h2 className='text-3xl'>{restaurant.name}</h2>
+        <h2 className='text-3xl mb-1'>{restaurant.name}</h2>
         <div className='flex items-start'>
           <div className='flex mb-2'>
             <Stars reviews={restaurant.reviews} />

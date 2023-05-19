@@ -90,3 +90,9 @@ const renderTitle = () => {
 `/search?city=ottawa&cuisine=indian&price=REGULAR`
 
 ### Search by restaurant name
+
+### Stars rating function
+
+### Handling Loading and Errors States
+
+- create `loading.tsx` file in app dir
