@@ -1,4 +1,3 @@
-import React from 'react'
 import ReviewCard from './ReviewCard'
 import { Review } from '@prisma/client'
 
