@@ -105,7 +105,7 @@ const renderTitle = () => {
 
 - `too many clients already` - keep creating new prisma issues
 
-### Make an HTTP request to an auth endpoint
+### Make an HTTP request to an sign up auth endpoint
 
 `/api/auth/signup`
 
@@ -115,3 +115,12 @@ const renderTitle = () => {
 4. Save user in DB
 5. Create a NJWT - ``
 6. Send JWT to client
+
+### Make an HTTP request to an sign in auth endpoint
+
+`/api/auth/signin`
+
+1. Validate the user input
+2. Validate the user has an account
+3. Compare hashed password
+4. Create JWT and send it to the user
