@@ -134,3 +134,5 @@ const renderTitle = () => {
 3. Decode the token - `npm install @types/jsonwebtoken jsonwebtoken`
 4. Fetch user from DB
 5. Send user to client
+
+## Context API
