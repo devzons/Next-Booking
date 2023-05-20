@@ -113,7 +113,7 @@ const renderTitle = () => {
 2. Validate user doesn't already have an account
 3. Hash the password - `npm install @types/bcrypt bcrypt`
 4. Save user in DB
-5. Create a NJWT - ``
+5. Create a JWT
 6. Send JWT to client
 
 ### Make an HTTP request to an sign in auth endpoint
@@ -124,3 +124,13 @@ const renderTitle = () => {
 2. Validate the user has an account
 3. Compare hashed password
 4. Create JWT and send it to the user
+
+### Make an HTTP request to an auth endpoint with token in header
+
+`/api/auth/me`
+
+1. Extract the token from header
+2. Verify token
+3. Decode the token - `npm install @types/jsonwebtoken jsonwebtoken`
+4. Fetch user from DB
+5. Send user to client
