@@ -2,7 +2,9 @@
 
 import { PrismaClient } from '@prisma/client'
 
-const getPrismaInstance = () => {
+let prisma: PrismaClient
+
+const getPrismaInstance = (): PrismaClient => {
   if (!prisma || prisma.$disconnect) {
     prisma = new PrismaClient()
   }

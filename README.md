@@ -100,3 +100,18 @@ const renderTitle = () => {
 ## Authentication
 
 ### Modal - material UI
+
+### DB Error developement
+
+- `too many clients already` - keep creating new prisma issues
+
+### Make an HTTP request to an auth endpoint
+
+`/api/auth/signup`
+
+1. Validate the user input - `npm install @types/validator validator`
+2. Validate user doesn't already have an account
+3. Hash the password
+4. Save user in DB
+5. Create a NJWT
+6. Send JWT to client

@@ -1,9 +1,11 @@
-import { useEffect } from 'react'
-import { prisma, PrismaClient } from './prisma'
+'use client'
 
-const usePrisma = () => {
+import { useEffect } from 'react'
+import { prisma } from './prisma'
+
+const usePrisma = (): PrismaClient => {
   useEffect(() => {
-    const cleanup = async () => {
+    const cleanup = async (): Promise<void> => {
       await prisma.$disconnect()
     }
 
