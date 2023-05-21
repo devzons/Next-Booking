@@ -136,3 +136,7 @@ const renderTitle = () => {
 5. Send user to client
 
 ## Context API
+
+### creating a custom useAuth hook
+
+`npm install axios`

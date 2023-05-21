@@ -1,5 +1,6 @@
 import './globals.css'
 import NavBar from './components/NavBar'
+import AuthContext from './context/AuthContext'
 
 export const metadata = {
   title: 'OpenBooking',
@@ -15,10 +16,12 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <div className='bg-gray-100 min-h-screen w-screen'>
-          <div className='max-w-[100rem] m-auto bg-white'>
-            <NavBar />
-            {children}
-          </div>
+          <AuthContext>
+            <div className='max-w-[100rem] m-auto bg-white'>
+              <NavBar />
+              {children}
+            </div>
+          </AuthContext>
         </div>
       </body>
     </html>
