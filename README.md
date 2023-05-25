@@ -105,6 +105,11 @@ const renderTitle = () => {
 
 - `too many clients already` - keep creating new prisma issues
 
+```bash
+npx prisma db push
+npx prisma migrate dev --name init
+```
+
 ### Make an HTTP request to an sign up auth endpoint
 
 `/api/auth/signup`
